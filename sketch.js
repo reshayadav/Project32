@@ -192,7 +192,7 @@ function mouseReleased(){
   }
 
   async function getBackgroundImg(){
-    var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    var response = await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
     var responseJson = await response.json();
     console.log(responseJson);
     var dayTime =responseJson.datetime;
@@ -200,7 +200,7 @@ function mouseReleased(){
     var hour = dayTime.slice(11,13);
     console.log(hour);
     if(hour>=6 && hour<=18){
-        bg = "bg.jpg";
+        bg = "bg1.jpg";
     }
     else{
         bg = "bg2.jpg";
