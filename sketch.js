@@ -93,9 +93,10 @@ function draw() {
   fill(255);
   text("SCORE : "+score,700,40);
 
+  push ();
   imageMode (CENTER);
   image (polygonImg,polygon.position.x,polygon.position.y,50,50);
-
+  pop ();
  
 
 //polygon.display();
